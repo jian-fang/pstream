@@ -57,6 +57,6 @@ stream benchmark pthread version
    program, as well as a way to run this test. You are welcome to
    help and make you own Makefile.
    
-* 6. If you have any suggestions or comments, please feel free to
+* 6. If you have any suggestions or comments, please feel free to\
    contact the author:
    Jian Fang(j.fang-1@tudelft.nl)
