@@ -12,7 +12,7 @@ stream benchmark pthread version
           results obtained from this program, please
           cite both this program and the orignal virginia
           version.
-==============================================================
+--------------------------------------------------------------
 
 
 ==============================================================
