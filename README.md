@@ -22,9 +22,9 @@ stream benchmark pthread version
 --------------------------------------------------------------
 
 
---------------------------------------------------------------
                         Introduction
-==============================================================
+--------------------------------------------------------------
+
 1. There are three arrays which is indicate as a, b, c. You can
    define you own type of data for the array. For default, it is
    int64_t, which means each element takes up 8B.
@@ -37,16 +37,27 @@ stream benchmark pthread version
    please modify the calculation method or the 'amountFactor'.
 
 3. This benchmark contain 9 operations:   (n is a constant)
+
     OPERATION TYPE    OPERATION CODE    DESCRIPTION    amountFactor
+    
     READ                  0             sum += c[j]        1
+    
     WRITE                 1             c[j] = n           2
+    
     SELFINC               2             c[j] ++            2
+    
     COPY                  3             c[j] = a[j]        3
+    
     MUL                   4             c[j] = a[j]*n      3
+    
     SELFADD               5             c[j] += a[j]       3
+    
     ADD                   6             c[j] = a[j]+b[j]   4
+    
     MULADD                7             c[j] = a[j]*n+b[j] 4
+    
     SELFDADD              8             c[j] += a[j]+b[j]  4
+    
     
 4. This program is written in C/C++ and using the pthread library.
    You can change the mapping[] array in the source code to
