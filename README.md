@@ -15,7 +15,7 @@ stream benchmark pthread version
  
  License: You are free to use this program and modify this
  
- program for your own use. If you publish results obtained from this program, please cite both this program and the orignal virginia version.
+          program for your own use. If you publish results obtained from this program, please cite both this program and the orignal virginia version.
 
 --------------------------------------------------------------
 
