@@ -38,7 +38,7 @@ stream benchmark pthread version
 * 3. This benchmark contain 9 operations:   (n is a constant)
 
   |  OPERATION TYPE | CODE |    DESCRIPTION    | amountFactor|
-  |-----------------|------|-------------------|-------------|
+  |:----------------|:----:|:------------------|:-----------:|
   |  READ           |  0   | sum += c[j]       |      1      |
   |  WRITE          |  1   | c[j] = n          |      2      |
   |  SELFINC        |  2   | c[j] ++           |      2      |
