@@ -1,7 +1,7 @@
 # pstream
 stream benchmark pthread version
 
-==============================================================
+--------------------------------------------------------------
  Program: STREAM
  Parallel Library: pthread
  Orignial Algorithm by John D. McCalpin
