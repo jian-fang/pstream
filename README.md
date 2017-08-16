@@ -22,8 +22,7 @@ stream benchmark pthread version
 --------------------------------------------------------------
 
 
-                        Introduction
---------------------------------------------------------------
+## Introduction
 
 1. There are three arrays which is indicate as a, b, c. You can
    define you own type of data for the array. For default, it is
