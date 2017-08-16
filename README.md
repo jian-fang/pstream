@@ -37,26 +37,17 @@ stream benchmark pthread version
 
 * 3. This benchmark contain 9 operations:   (n is a constant)
 
-    OPERATION TYPE    OPERATION CODE    DESCRIPTION    amountFactor
-    
-    READ                  0             sum += c[j]        1
-    
-    WRITE                 1             c[j] = n           2
-    
-    SELFINC               2             c[j] ++            2
-    
-    COPY                  3             c[j] = a[j]        3
-    
-    MUL                   4             c[j] = a[j]*n      3
-    
-    SELFADD               5             c[j] += a[j]       3
-    
-    ADD                   6             c[j] = a[j]+b[j]   4
-    
-    MULADD                7             c[j] = a[j]*n+b[j] 4
-    
-    SELFDADD              8             c[j] += a[j]+b[j]  4
-    
+  |  OPERATION TYPE | CODE |    DESCRIPTION    | amountFactor|
+  |-----------------|------|-------------------|-------------|
+  |  READ           |  0   | sum += c[j]       |      1      |
+  |  WRITE          |  1   | c[j] = n          |      2      |
+  |  SELFINC        |  2   | c[j] ++           |      2      |
+  |  COPY           |  3   | c[j] = a[j]       |      3      |
+  |  MUL            |  4   | c[j] = a[j]*n     |      3      |
+  |  SELFADD        |  5   | c[j] += a[j]      |      3      |
+  |  ADD            |  6   | c[j] = a[j]+b[j]  |      4      |
+  |  MULADD         |  7   | c[j] = a[j]*n+b[j]|      4      |
+  |  SELFDADD       |  8   | c[j] += a[j]+b[j] |      4      |
     
 * 4. This program is written in C/C++ and using the pthread library.
    You can change the `mapping[]` array in the source code to
