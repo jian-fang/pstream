@@ -14,15 +14,16 @@ stream benchmark pthread version
  Copyright: Jian Fang(j.fang-1@tudelft.nl)
  
  License: You are free to use this program and modify this program\
-          for your own use. If you publish results obtained from this program, please cite both this program and the orignal virginia version.
+ for your own use. If you publish results obtained from this program,\
+ please cite both this program and the orignal virginia version.
 
 --------------------------------------------------------------
 
 
 ## Introduction
 
-* 1. There are three arrays which is indicate as a, b, c. You can
-   define you own type of data for the array. For default, it is
+* 1. There are three arrays which is indicate as a, b, c. You can\
+   define you own type of data for the array. For default, it is\
    int64_t, which means each element takes up 8B.
 
 * 2. The total data access amount consider the cache write strategy
