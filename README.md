@@ -14,7 +14,7 @@ stream benchmark pthread version
  Copyright: Jian Fang(j.fang-1@tudelft.nl)
  
  License: You are free to use this program and modify this program\
- for your own use. If you publish results obtained from this program, please cite both this program and the orignal virginia version.
+          for your own use. If you publish results obtained from this program, please cite both this program and the orignal virginia version.
 
 --------------------------------------------------------------
 
