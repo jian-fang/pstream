@@ -24,14 +24,14 @@ stream benchmark pthread version
 
 * 1. There are three arrays which is indicate as a, b, c. You can\
    define you own type of data for the array. For default, it is\
-   int64_t, which means each element takes up 8B.
+   int64_t, which means each element takes up 8B.\
 
-* 2. The total data access amount consider the cache write strategy
-   in most of the current system that if a write is not writing a
-   whole cacheline, it needs to read the cacheline first before 
-   writing it back. So each write miss for L3 leads to an extra
-   read. If the system you are testing is not using this strategy,
-   please modify the calculation method or the 'amountFactor'.
+* 2. The total data access amount consider the cache write strategy\
+   in most of the current system that if a write is not writing a\
+   whole cacheline, it needs to read the cacheline first before\
+   writing it back. So each write miss for L3 leads to an extra\
+   read. If the system you are testing is not using this strategy,\
+   please modify the calculation method or the 'amountFactor'.\
 
 * 3. This benchmark contain 9 operations:   (n is a constant)
 
