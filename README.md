@@ -24,14 +24,14 @@ stream benchmark pthread version
 
 * 1. There are three arrays which is indicate as a, b, c. You can\
    define you own type of data for the array. For default, it is\
-   int64_t, which means each element takes up 8B.\
+   int64_t, which means each element takes up 8B.
 
 * 2. The total data access amount consider the cache write strategy\
    in most of the current system that if a write is not writing a\
    whole cacheline, it needs to read the cacheline first before\
    writing it back. So each write miss for L3 leads to an extra\
    read. If the system you are testing is not using this strategy,\
-   please modify the calculation method or the 'amountFactor'.\
+   please modify the calculation method or the 'amountFactor'.
 
 * 3. This benchmark contain 9 operations:   (n is a constant)
 
@@ -47,18 +47,18 @@ stream benchmark pthread version
   |  MULADD         |  7   | c[j] = a[j]*n+b[j]|      4      |
   |  SELFDADD       |  8   | c[j] += a[j]+b[j] |      4      |
     
-* 4. This program is written in C/C++ and using the pthread library.
-   You can change the `mapping[]` array in the source code to
-   change the core binding. For example you have a 2 nodes numa
-   system. For node 1, it has core 0-9, and node 2 has core
-   10-19. If you only want to test the bandwidth of node 1,
+* 4. This program is written in C/C++ and using the pthread library.\
+   You can change the `mapping[]` array in the source code to\
+   change the core binding. For example you have a 2 nodes numa\
+   system. For node 1, it has core 0-9, and node 2 has core\
+   10-19. If you only want to test the bandwidth of node 1,\
    just place 0-9 in the `mapping[]` array.
    
-* 5. There is no Makefile yet. We provide a `test.sh` file example
-   which contains instructoins and an example how to compile tihs
-   program, as well as a way to run this test. You are welcome to
+* 5. There is no Makefile yet. We provide a `test.sh` file example\
+   which contains instructoins and an example how to compile tihs\
+   program, as well as a way to run this test. You are welcome to\
    help and make you own Makefile.
    
 * 6. If you have any suggestions or comments, please feel free to\
-   contact the author:
+   contact the author:\
    Jian Fang(j.fang-1@tudelft.nl)
