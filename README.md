@@ -2,20 +2,27 @@
 stream benchmark pthread version
 
 --------------------------------------------------------------
+
  Program: STREAM
+ 
  Parallel Library: pthread
+ 
  Orignial Algorithm by John D. McCalpin
+ 
  Programmer: Jian Fang (TU Delft)
+ 
  Copyright: Jian Fang(j.fang-1@tudelft.nl)
+ 
  License: You are free to use this program and modify
           this program for your own use. If you publish
           results obtained from this program, please
           cite both this program and the orignal virginia
           version.
+
 --------------------------------------------------------------
 
 
-==============================================================
+--------------------------------------------------------------
                         Introduction
 ==============================================================
 1. There are three arrays which is indicate as a, b, c. You can
