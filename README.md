@@ -33,7 +33,14 @@ stream benchmark pthread version
    read. If the system you are testing is not using this strategy,\
    please modify the calculation method or the 'amountFactor'.
 
-* 3. This benchmark contain 9 operations:   (n is a constant)
+* 3. The program works for both `share` and `non-share` memory\
+   channels. `share` channel means the read and write are using a\
+   same memory channel, and it can be use as only `read` or only\
+   `write` at a same time. `non-share` channels mean that the memory\
+   has both individual read channels and individual write channels,\
+   the read and write can happen in parallel.
+
+* 4. This benchmark contain 9 operations:   (n is a constant)
 
   |  OPERATION TYPE | CODE |    DESCRIPTION    | amountFactor|
   |:----------------|:----:|:------------------|:-----------:|
@@ -47,18 +54,18 @@ stream benchmark pthread version
   |  MULADD         |  7   | c[j] = a[j]*n+b[j]|      4      |
   |  SELFDADD       |  8   | c[j] += a[j]+b[j] |      4      |
     
-* 4. This program is written in C/C++ and using the pthread library.\
+* 5. This program is written in C/C++ and using the pthread library.\
    You can change the `mapping[]` array in the source code to\
    change the core binding. For example you have a 2 nodes numa\
    system. For node 1, it has core 0-9, and node 2 has core\
    10-19. If you only want to test the bandwidth of node 1,\
    just place 0-9 in the `mapping[]` array.
    
-* 5. There is no Makefile yet. We provide a `test.sh` file example\
+* 6. There is no Makefile yet. We provide a `test.sh` file example\
    which contains instructoins and an example how to compile tihs\
    program, as well as a way to run this test. You are welcome to\
    help and make you own Makefile.
    
-* 6. If you have any suggestions or comments, please feel free to\
+* 7. If you have any suggestions or comments, please feel free to\
    contact the author:\
    Jian Fang(j.fang-1@tudelft.nl)
